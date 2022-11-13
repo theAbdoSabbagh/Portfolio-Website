@@ -260,24 +260,13 @@ img {
 }
 
 /* ===== ABOUT =====*/
-.about__container {
-  row-gap: 2rem;
-  text-align: center;
-}
 
 .about__information {
   text-align: center;
-  /* margin: auto; */
-  width: 1025px;
 }
 
-.about__img {
-  justify-self: center;
-}
-
-.about__img img {
-  width: 200px;
-  border-radius: .5rem;
+.about__text {
+  text-align: center;
 }
 
 /* ===== SKILLS =====*/
