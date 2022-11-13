@@ -45,12 +45,12 @@ window.addEventListener('scroll', scrollActive)
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
-    duration: 1250,
+    duration: 1000,
     delay: 200,
 //     reset: true
 });
 
-sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
-sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
-sr.reveal('.home__social-icon',{ interval: 200}); 
-sr.reveal('.skills__data, .projects__img',{interval: 200}); 
+sr.reveal('.project__data, .about__img, .statistics__subtitle, .statistics__text',{}); 
+sr.reveal('.project__img, .about__subtitle, .about__text, .statistics__img',{delay: 400}); 
+sr.reveal('.project__social-icon',{ interval: 200}); 
+sr.reveal('.statistics__data, .projects__img',{interval: 200}); 
