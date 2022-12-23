@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                <link rel="stylesheet" href="assets/css/styles.css">
+
+                <!-- =====BOX ICONS===== -->
+                <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+                <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.css' rel='stylesheet'>
+                <title>Sxvxge | DiscordScraper</title>
+            </head>
+            <body>
+                <!--===== HEADER =====-->
+                <header class="l-header">
+                    <nav class="nav bd-grid">
+                        <div>
+                            <a href="https://sxvxge.dev/" class="nav__logo">Home</a>
+                        </div>
+
+                        <div class="nav__menu" id="nav-menu">
+                            <ul class="nav__list">
+                                <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                                <li class="nav__item"><a href="#statistics" class="nav__link">Statistics</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="nav__toggle" id="nav-toggle">
+                            <i class='bx bx-menu'></i>
+                        </div>
+                    </nav>
+                </header>
+
+                <main class="l-main">
+                    <!--===== HOME =====-->
+                    <section class="home bd-grid" id="home">
+                        <div class="project__data">
+                            <h1 class="project_title">Project  <a href="https://github.com/Sxvxgee/DiscordScraper" target="_blank"><span class="project_title-color">DiscordScraper</span></a><h1 class="project_caption">Discord scraper for guild members profile picture, username, ID and Bio.</h1></h1>
+                        </div>
+                    </section>
+
+                    <!--===== ABOUT =====-->
+                    <section class="about section " id="about">
+                        <h2 class="section-title">About</h2>
+                        <div class="about__information">
+                            <p class="about__text">DiscordScraper is a simple yet powerful scraper made in Python, that helps<br>
+people scrape lots of data about all members in a specific guild/server, really fast.<br>
+It was inspired by a JS version made by sertchan on GitHub. My goal was to make the same<br>
+project, but with some better features, and more speed, and have the code be easily readable<br>
+as Python is way simpler than JS.</p>
+                        </div>
+                    </section>
+
+                    <!--===== STATISTICS =====-->
+                    <section class="statistics section" id="statistics">
+                        <h2 class="section-title">Statistics</h2>
+
+                        <div class="statistics__container bd-grid">          
+                            <div>
+                                <h2 class="statistics__subtitle">Overall Statistics</h2>
+                                <p class="statistics__text">These are hardcoded at this moment, as I haven't figured out a way to automate updating them.</p>
+                                <div class="statistics__data">
+                                    <div class="statistics__names">
+                                        <box-icon type='logo' name='user'></box-icon>
+                                        <i class='bx bx-star  statistics__icon'></i>
+                                        <span class="statistics__name">Stars</span>
+                                    </div>
+                                    <div class="statistics__bar statistics__user"></div>
+                                    <div>
+                                    <span class="statistics__num">10</span>
+                                    </div>
+                                </div>
+                                <div class="statistics__data">
+                                    <div class="statistics__names">
+                                    <i class='bx bx-git-repo-forked  statistics__icon'></i>
+                                        <span class="statistics__name">Forks</span>
+                                    </div>
+                                    <div class="statistics__bar statistics__commands"></div>
+                                    <div>
+                                    <span class="statistics__num">0</span>
+                                    </div>
+                                </div>
+                                <div class="statistics__data">
+                                    <div class="statistics__names">
+                                        <i class='bx bx-group  statistics__icon'></i>
+                                        <span class="statistics__name">Contributors</span>
+                                    </div>
+                                    <div class="statistics__bar statistics__commands"></div>
+                                    <div>
+                                    <span class="statistics__num">2</span>
+                                    </div>
+                                </div>
+                                <div class="statistics__data">
+                                    <div class="statistics__names">
+                                        <i class='bx bx-info-circle  statistics__icon'></i>
+                                        <span class="statistics__name">Issues</span>
+                                    </div>
+                                    <div class="statistics__bar statistics__commands"></div>
+                                    <div>
+                                    <span class="statistics__num">1</span>
+                                    </div>
+                                </div>
+                                <div class="statistics__data">
+                                    <div class="statistics__names">
+                                        <i class='bx bx-git-pull-request statistics__icon'></i>
+                                        <span class="statistics__name">Pull Requests</span>
+                                    </div>
+                                    <div class="statistics__bar statistics__commands"></div>
+                                    <div>
+                                    <span class="statistics__num">2</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>              
+                                <img src="assets/img/statistics_no_caption.png" alt="" class="statistics__img">
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+
+                <!--===== FOOTER =====-->
+                <footer class="footer">
+                    <p class="footer__title">Sxvxge</p>
+                    <div class="footer__social">
+                    <a target="_blank" href="https://twitter.com/Sxvxgeness" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                    <a target="_blank" href="https://stackoverflow.com/users/20310104/sxvxgeness" class="footer__icon"><i class='bx bxl-stack-overflow'></i>
+                    <a target="_blank" href="https://github.com/Sxvxgee/" class="footer__icon"><i class='bx bxl-github' ></i></a>
+                    </div>
+                    <p class="footer__copy"><i class='bx bx-copyright'></i> TheNinovium. All rights reserved.</p>
+                </footer>
+
+
+                <!--===== SCROLL REVEAL =====-->
+                <script src="https://unpkg.com/scrollreveal"></script>
+
+                <!--===== MAIN JS =====-->
+                <script src="assets/js/main.js"></script>
+            </body>
+        </html>
