@@ -20,7 +20,7 @@
                 statistics[1].innerHTML = data["forks_count"];
                 statistics[2].innerHTML = data["open_issues_count"];
                 statistics[3].innerHTML = Object.keys(await (await fetch("https://api.github.com/repos/sxvxgee/Darkend/contributors")).json()).length;
-                statistics[4].innerHTML = Object.keys(await (await fetch("https://api.github.com/repos/sxvxgee/Darkend/pulls/?state=all")).json()).length;
+                statistics[4].innerHTML = Object.keys(await (await fetch("https://api.github.com/repos/sxvxgee/Darkend/pulls?state=all&per_page=100")).json()).length;
             });
         </script>
     </head>
