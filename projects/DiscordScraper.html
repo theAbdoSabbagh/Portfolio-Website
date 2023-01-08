@@ -10,6 +10,19 @@
                 <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
                 <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.css' rel='stylesheet'>
                 <title>Sxvxge | DiscordScraper</title>
+
+                <script>
+                    window.addEventListener('load', async function (event) {
+                    const data = await (await fetch("https://api.github.com/repos/sxvxgee/DiscordScraper")).json();
+                    const statistics = document.getElementsByClassName("statistics__num");
+                    
+                        statistics[0].innerHTML = data["stargazers_count"];
+                        statistics[1].innerHTML = data["forks_count"];
+                        statistics[2].innerHTML = data["open_issues_count"];
+                        statistics[3].innerHTML = Object.keys(await (await fetch("https://api.github.com/repos/sxvxgee/DiscordScraper/contributors")).json()).length;
+                        statistics[4].innerHTML = Object.keys(await (await fetch("https://api.github.com/repos/sxvxgee/DiscordScraper/pulls/?state=all")).json()).length;
+                    });
+                </script>
             </head>
             <body>
                 <!--===== HEADER =====-->
@@ -60,7 +73,7 @@ as Python is way simpler than JS.</p>
                         <div class="statistics__container bd-grid">          
                             <div>
                                 <h2 class="statistics__subtitle">Overall Statistics</h2>
-                                <p class="statistics__text">These are hardcoded at this moment, as I haven't figured out a way to automate updating them.</p>
+                                <p class="statistics__text">These statistics are taken from the Github API.</p>
                                 <div class="statistics__data">
                                     <div class="statistics__names">
                                         <box-icon type='logo' name='user'></box-icon>
@@ -130,7 +143,7 @@ as Python is way simpler than JS.</p>
                     <a target="_blank" href="https://stackoverflow.com/users/20310104/sxvxgeness" class="footer__icon"><i class='bx bxl-stack-overflow'></i>
                     <a target="_blank" href="https://github.com/Sxvxgee/" class="footer__icon"><i class='bx bxl-github' ></i></a>
                     </div>
-                    <p class="footer__copy"><i class='bx bx-copyright'></i> TheNinovium. All rights reserved.</p>
+                    <p class="footer__copy"><i class='bx bx-copyright'></i> Sxvxge. All rights reserved.</p>
                 </footer>
 
 

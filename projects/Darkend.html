@@ -10,6 +10,19 @@
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.css' rel='stylesheet'>
         <title>Sxvxge | Darkend</title>
+
+        <script>
+            window.addEventListener('load', async function (event) {
+            const data = await (await fetch("https://api.github.com/repos/sxvxgee/Darkend")).json();
+            const statistics = document.getElementsByClassName("statistics__num");
+            
+                statistics[0].innerHTML = data["stargazers_count"];
+                statistics[1].innerHTML = data["forks_count"];
+                statistics[2].innerHTML = data["open_issues_count"];
+                statistics[3].innerHTML = Object.keys(await (await fetch("https://api.github.com/repos/sxvxgee/Darkend/contributors")).json()).length;
+                statistics[4].innerHTML = Object.keys(await (await fetch("https://api.github.com/repos/sxvxgee/Darkend/pulls/?state=all")).json()).length;
+            });
+        </script>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -59,56 +72,56 @@
                 <div class="statistics__container bd-grid">          
                     <div>
                         <h2 class="statistics__subtitle">Overall Statistics</h2>
-                        <p class="statistics__text">For statistical reasons, Darkend gathered anonymised use data from it's userbase.</p>
+                        <p class="statistics__text">These statistics are taken from the Github API.</p>
                         <div class="statistics__data">
                             <div class="statistics__names">
                                 <box-icon type='logo' name='user'></box-icon>
-                                <i class='bx bx-user statistics__icon'></i>
-                                <span class="statistics__name">Unique users count</span>
+                                <i class='bx bx-star statistics__icon'></i>
+                                <span class="statistics__name">Stars</span>
                             </div>
                             <div class="statistics__bar statistics__user"></div>
                             <div>
-                              <span class="statistics__num">1,500+</span>
+                              <span class="statistics__num">8</span>
                             </div>
                         </div>
                         <div class="statistics__data">
                             <div class="statistics__names">
-                                <i class='bx bx-terminal statistics__icon'></i>
-                                <span class="statistics__name">Commands executed</span>
+                              <i class='bx bx-git-repo-forked statistics__icon'></i>
+                                <span class="statistics__name">Forks</span>
                             </div>
                             <div class="statistics__bar statistics__commands"></div>
                             <div>
-                              <span class="statistics__num">18,900,000+</span>
+                              <span class="statistics__num">1</span>
                             </div>
                         </div>
                         <div class="statistics__data">
                             <div class="statistics__names">
-                                <i class='bx bx-line-chart statistics__icon'></i>
-                                <span class="statistics__name">Money made</span>
+                                <i class='bx bx-group statistics__icon'></i>
+                                <span class="statistics__name">Contributors</span>
                             </div>
                             <div class="statistics__bar statistics__commands"></div>
                             <div>
-                              <span class="statistics__num">3,780,000,000+</span>
+                              <span class="statistics__num">4</span>
                             </div>
                         </div>
                         <div class="statistics__data">
                             <div class="statistics__names">
-                                <i class='bx bx-bot statistics__icon'></i>
-                                <span class="statistics__name">Captchas solved</span>
+                                <i class='bx bx-info-circle statistics__icon'></i>
+                                <span class="statistics__name">Issues</span>
                             </div>
                             <div class="statistics__bar statistics__commands"></div>
                             <div>
-                              <span class="statistics__num">126,000+</span>
+                              <span class="statistics__num">0</span>
                             </div>
                         </div>
                         <div class="statistics__data">
                             <div class="statistics__names">
-                                <i class='bx bxs-download statistics__icon'></i>
-                                <span class="statistics__name">Downloads</span>
+                                <i class='bx bx-git-pull-request statistics__icon'></i>
+                                <span class="statistics__name">Pull Requests</span>
                             </div>
                             <div class="statistics__bar statistics__commands"></div>
                             <div>
-                              <span class="statistics__num">15,000+</span>
+                              <span class="statistics__num">20+</span>
                             </div>
                         </div>
                     </div>
@@ -129,7 +142,7 @@
               <a target="_blank" href="https://stackoverflow.com/users/20310104/sxvxgeness" class="footer__icon"><i class='bx bxl-stack-overflow'></i>
               <a target="_blank" href="https://github.com/Sxvxgee/" class="footer__icon"><i class='bx bxl-github' ></i></a>
             </div>
-            <p class="footer__copy"><i class='bx bx-copyright'></i> TheNinovium. All rights reserved.</p>
+            <p class="footer__copy"><i class='bx bx-copyright'></i> Sxvxge. All rights reserved.</p>
         </footer>
 
 
