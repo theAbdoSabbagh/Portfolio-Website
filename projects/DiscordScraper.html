@@ -14,7 +14,7 @@
                 <script>
                     window.addEventListener('load', async function (event) {
                     const data = await (await fetch("https://api.github.com/repos/sxvxgee/DiscordScraper")).json();
-                    const statistics = document.getElementsByClassName("statistics__num");
+                    const statistics = document.getElementsByClassName("statistics_num");
                     
                         statistics[0].innerHTML = data["stargazers_count"];
                         statistics[1].innerHTML = data["forks_count"];
@@ -29,18 +29,18 @@
                 <header class="l-header">
                     <nav class="nav bd-grid">
                         <div>
-                            <a href="https://sxvxge.dev/" class="nav__logo">Home</a>
+                            <a href="https://sxvxge.dev/" class="nav_logo">Home</a>
                         </div>
 
-                        <div class="nav__menu" id="nav-menu">
-                            <ul class="nav__list">
-                                <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                                <li class="nav__item"><a href="#statistics" class="nav__link">Statistics</a></li>
+                        <div class="nav_menu" id="nav-menu">
+                            <ul class="nav_list">
+                                <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
+                                <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                                <li class="nav_item"><a href="#statistics" class="nav_link">Statistics</a></li>
                             </ul>
                         </div>
 
-                        <div class="nav__toggle" id="nav-toggle">
+                        <div class="nav_toggle" id="nav-toggle">
                             <i class='bx bx-menu'></i>
                         </div>
                     </nav>
@@ -49,7 +49,7 @@
                 <main class="l-main">
                     <!--===== HOME =====-->
                     <section class="home bd-grid" id="home">
-                        <div class="project__data">
+                        <div class="project_data">
                             <h1 class="project_title">Project  <a href="https://github.com/Sxvxgee/DiscordScraper" target="_blank"><span class="project_title-color">DiscordScraper</span></a><h1 class="project_caption">Discord scraper for guild members profile picture, username, ID and Bio.</h1></h1>
                         </div>
                     </section>
@@ -57,8 +57,8 @@
                     <!--===== ABOUT =====-->
                     <section class="about section " id="about">
                         <h2 class="section-title">About</h2>
-                        <div class="about__information">
-                            <p class="about__text">DiscordScraper is a simple yet powerful scraper made in Python, that helps<br>
+                        <div class="about_information">
+                            <p class="about_text">DiscordScraper is a simple yet powerful scraper made in Python, that helps<br>
 people scrape lots of data about all members in a specific guild/server, really fast.<br>
 It was inspired by a JS version made by sertchan on GitHub. My goal was to make the same<br>
 project, but with some better features, and more speed, and have the code be easily readable<br>
@@ -70,65 +70,65 @@ as Python is way simpler than JS.</p>
                     <section class="statistics section" id="statistics">
                         <h2 class="section-title">Statistics</h2>
 
-                        <div class="statistics__container bd-grid">          
+                        <div class="statistics_container bd-grid">          
                             <div>
-                                <h2 class="statistics__subtitle">Overall Statistics</h2>
-                                <p class="statistics__text">These statistics are taken from the Github API.</p>
-                                <div class="statistics__data">
-                                    <div class="statistics__names">
+                                <h2 class="statistics_subtitle">Overall Statistics</h2>
+                                <p class="statistics_text">These statistics are taken from the Github API.</p>
+                                <div class="statistics_data">
+                                    <div class="statistics_names">
                                         <box-icon type='logo' name='user'></box-icon>
-                                        <i class='bx bx-star  statistics__icon'></i>
-                                        <span class="statistics__name">Stars</span>
+                                        <i class='bx bx-star  statistics_icon'></i>
+                                        <span class="statistics_name">Stars</span>
                                     </div>
-                                    <div class="statistics__bar statistics__user"></div>
+                                    <div class="statistics_bar statistics_user"></div>
                                     <div>
-                                    <span class="statistics__num">10</span>
+                                    <span class="statistics_num">10</span>
                                     </div>
                                 </div>
-                                <div class="statistics__data">
-                                    <div class="statistics__names">
-                                    <i class='bx bx-git-repo-forked  statistics__icon'></i>
-                                        <span class="statistics__name">Forks</span>
+                                <div class="statistics_data">
+                                    <div class="statistics_names">
+                                    <i class='bx bx-git-repo-forked  statistics_icon'></i>
+                                        <span class="statistics_name">Forks</span>
                                     </div>
-                                    <div class="statistics__bar statistics__commands"></div>
+                                    <div class="statistics_bar statistics_commands"></div>
                                     <div>
-                                    <span class="statistics__num">0</span>
+                                    <span class="statistics_num">0</span>
                                     </div>
                                 </div>
-                                <div class="statistics__data">
-                                    <div class="statistics__names">
-                                        <i class='bx bx-group  statistics__icon'></i>
-                                        <span class="statistics__name">Contributors</span>
+                                <div class="statistics_data">
+                                    <div class="statistics_names">
+                                        <i class='bx bx-group  statistics_icon'></i>
+                                        <span class="statistics_name">Contributors</span>
                                     </div>
-                                    <div class="statistics__bar statistics__commands"></div>
+                                    <div class="statistics_bar statistics_commands"></div>
                                     <div>
-                                    <span class="statistics__num">2</span>
+                                    <span class="statistics_num">2</span>
                                     </div>
                                 </div>
-                                <div class="statistics__data">
-                                    <div class="statistics__names">
-                                        <i class='bx bx-info-circle  statistics__icon'></i>
-                                        <span class="statistics__name">Issues</span>
+                                <div class="statistics_data">
+                                    <div class="statistics_names">
+                                        <i class='bx bx-info-circle  statistics_icon'></i>
+                                        <span class="statistics_name">Issues</span>
                                     </div>
-                                    <div class="statistics__bar statistics__commands"></div>
+                                    <div class="statistics_bar statistics_commands"></div>
                                     <div>
-                                    <span class="statistics__num">1</span>
+                                    <span class="statistics_num">1</span>
                                     </div>
                                 </div>
-                                <div class="statistics__data">
-                                    <div class="statistics__names">
-                                        <i class='bx bx-git-pull-request statistics__icon'></i>
-                                        <span class="statistics__name">Pull Requests</span>
+                                <div class="statistics_data">
+                                    <div class="statistics_names">
+                                        <i class='bx bx-git-pull-request statistics_icon'></i>
+                                        <span class="statistics_name">Pull Requests</span>
                                     </div>
-                                    <div class="statistics__bar statistics__commands"></div>
+                                    <div class="statistics_bar statistics_commands"></div>
                                     <div>
-                                    <span class="statistics__num">2</span>
+                                    <span class="statistics_num">2</span>
                                     </div>
                                 </div>
                             </div>
                             
                             <div>              
-                                <img src="assets/img/statistics.png" alt="" class="statistics__img">
+                                <img src="assets/img/statistics.png" alt="" class="statistics_img">
                             </div>
                         </div>
                     </section>
@@ -137,13 +137,13 @@ as Python is way simpler than JS.</p>
 
                 <!--===== FOOTER =====-->
                 <footer class="footer">
-                    <p class="footer__title">Sxvxge</p>
-                    <div class="footer__social">
-                    <a target="_blank" href="https://twitter.com/Sxvxgeness" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-                    <a target="_blank" href="https://stackoverflow.com/users/20310104/sxvxgeness" class="footer__icon"><i class='bx bxl-stack-overflow'></i>
-                    <a target="_blank" href="https://github.com/Sxvxgee/" class="footer__icon"><i class='bx bxl-github' ></i></a>
+                    <p class="footer_title">Sxvxge</p>
+                    <div class="footer_social">
+                    <a target="_blank" href="https://twitter.com/Sxvxgeness" class="footer_icon"><i class='bx bxl-twitter' ></i></a>
+                    <a target="_blank" href="https://stackoverflow.com/users/20310104/sxvxgeness" class="footer_icon"><i class='bx bxl-stack-overflow'></i>
+                    <a target="_blank" href="https://github.com/Sxvxgee/" class="footer_icon"><i class='bx bxl-github' ></i></a>
                     </div>
-                    <p class="footer__copy"><i class='bx bx-copyright'></i> Sxvxge. All rights reserved.</p>
+                    <p class="footer_copy"><i class='bx bx-copyright'></i> Sxvxge. All rights reserved.</p>
                 </footer>
 
 

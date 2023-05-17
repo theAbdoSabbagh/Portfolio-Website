@@ -12,11 +12,11 @@ const showMenu = (toggleId, navId) =>{
 showMenu('nav-toggle','nav-menu')
 
 /*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll('.nav__link')
+const navLink = document.querySelectorAll('.nav_link')
 
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
+    // When we click on each nav_link, we remove the show-menu class
     navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
@@ -33,9 +33,9 @@ function scrollActive(){
         sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active')
         }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active')
         }
     })
 }
@@ -50,7 +50,7 @@ const sr = ScrollReveal({
     reset: false
 });
 
-sr.reveal('.project__data, .about__img, .statistics__subtitle, .statistics__text, .section-title',{}); 
-sr.reveal('.project__img, .about__name, .about__text, .statistics__img',{delay: 400}); 
-sr.reveal('.project__social-icon',{ interval: 200}); 
-sr.reveal('.statistics__data, .projects__img',{interval: 200});
+sr.reveal('.project_data, .about_img, .statistics_subtitle, .statistics_text, .section-title',{}); 
+sr.reveal('.project_img, .about_name, .about_text, .statistics_img',{delay: 400}); 
+sr.reveal('.project_social-icon',{ interval: 200}); 
+sr.reveal('.statistics_data, .projects_img',{interval: 200});
