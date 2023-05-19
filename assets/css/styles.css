@@ -25,7 +25,6 @@
   --z-back: -10;
   --z-fixed: 100;
 }
-
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
@@ -239,19 +238,36 @@ img {
 }
 
 /*BUTTONS*/
-.button {
-  display: inline-block;
-  background-color: var(--first-color);
-  color: #fff;
-  padding: .75rem 2.5rem;
-  font-weight: var(--font-semi);
-  border-radius: .5rem;
-  transition: .3s;
+
+.SxvContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.button:hover {
-  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
-}
+.SxvButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--first-color);
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin-top: 3rem;
+    width: 250px;
+    height: 60px;
+    border-radius: 6px;
+    border: 2px solid var(--first-color);
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  .SxvButton:hover {
+    background: none;
+    color: var(--first-color);
+    /* border: 2px solid rgb(255, 255, 255); */
+  }
+
 
 /* ===== ABOUT =====*/
 .about_container {
@@ -373,7 +389,7 @@ img {
     background-color: #ccc;
     border-radius: 5px;
     z-index: var(--z-back);
-} 
+}
 
 .skills_item {
   width: 0px;
