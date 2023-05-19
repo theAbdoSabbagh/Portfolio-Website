@@ -52,5 +52,5 @@ const sr = ScrollReveal({
 
 sr.reveal('.project_data, .about_img, .statistics_subtitle, .statistics_text, .section-title',{}); 
 sr.reveal('.project_img, .about_name, .about_text, .statistics_img',{delay: 400}); 
-sr.reveal('.project_social-icon',{ interval: 200}); 
-sr.reveal('.statistics_data, .projects_img',{interval: 200});
+sr.reveal('.project_social-icon',{ interval: 50}); 
+sr.reveal('.statistics_data, .projects_img',{interval: 50});
