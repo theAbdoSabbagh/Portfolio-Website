@@ -262,13 +262,16 @@ img {
 /* ===== ABOUT =====*/
 
 .about_information {
-  text-align: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .about_text {
-  font-size: 1rem;
-  margin-bottom: var(--mb-5);
-  text-align: center;
+    font-size: 1rem;
+    margin-bottom: var(--mb-5);
+    max-width: 900px;
 }
 
 /* ===== SKILLS =====*/
