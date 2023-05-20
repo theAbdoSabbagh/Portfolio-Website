@@ -267,28 +267,10 @@ img {
   .SxvButton:hover {
     background: none;
     color: var(--first-color);
-    /* border: 2px solid rgb(255, 255, 255); */
   }
 
 
 /* ===== PROJECTS =====*/
-/* .projects_container {
-  row-gap: 2rem;
-} */
-
-/* .projects_img {
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-  border-radius: .5rem;
-  overflow: hidden;
-}
-
-.projects_img img {
-  transition: 1s;
-}
-
-.projects_img img:hover {
-  transform: scale(1.1);
-} */
 .container {
     display: flex;
     align-items: center;
