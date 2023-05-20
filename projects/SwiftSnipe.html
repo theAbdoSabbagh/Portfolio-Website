@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <link rel="stylesheet" href="assets/css/styles.css">
+
+            <!-- =====BOX ICONS===== -->
+            <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+            <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.css' rel='stylesheet'>
+            <title>Sxvxge | SwiftSnipe</title>
+
+            
+                <script>
+                    window.addEventListener('load', async function (event) {
+                    const data = await (await fetch("https://api.github.com/repos/sxvxgee/SwiftSnipe")).json();
+                    const statistics = document.getElementsByClassName("statistics_num");
+                    
+                        statistics[0].innerHTML = data["stargazers_count"];
+                        statistics[1].innerHTML = data["forks_count"];
+                        statistics[2].innerHTML = data["open_issues_count"];
+                        statistics[3].innerHTML = Object.keys(await (await fetch("https://api.github.com/repos/sxvxgee/SwiftSnipe/contributors")).json()).length;
+                        statistics[4].innerHTML = Object.keys(await (await fetch("https://api.github.com/repos/sxvxgee/SwiftSnipe/pulls?state=all&per_page=100")).json()).length;
+                    });
+                </script>
+        </head>
+        <body>
+            <!--===== HEADER =====-->
+            <header class="l-header">
+                <nav class="nav bd-grid">
+                    <div>
+                        <a href="https://sxvxge.dev/" class="nav_logo">Home</a>
+                    </div>
+
+                    <div class="nav_menu" id="nav-menu">
+                        <ul class="nav_list">
+                            <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
+                            <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                            <li class="nav_item"><a href="#statistics" class="nav_link">Statistics</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav_toggle" id="nav-toggle">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </nav>
+            </header>
+
+            <main class="l-main">
+                <!--===== HOME =====-->
+                <section class="home bd-grid" id="home">
+                    <div class="project_data">
+                        <h1 class="project_title">Project  <a href="https://github.com/Sxvxgee/SwiftSnipe" target="_blank"><span class="project_title-color">SwiftSnipe</span></a><h1 class="project_caption">The ultimate Discord Name Sniper with lightning-fast speed, intuitive interface, webhook support, enhanced accuracy, customization options, and top-notch security.</h1></h1>
+                    </div>
+                </section>
+
+                <!--===== ABOUT =====-->
+                <section class="about section " id="about">
+                    <h2 class="section-title">About</h2>
+                    <div class="about_information">
+                        <p class="about_text">Prepare to witness the unparalleled might of the supreme Discord Name Sniper, a force to be reckoned with. This extraordinary creation combines lightning-fast speed, an intuitive interface, and the capability to utilize webhooks, setting a new standard of efficiency and convenience. With enhanced accuracy and uncompromising security measures in place, seizing highly coveted usernames becomes a seamless endeavor, placing you at the forefront of the competition. Revel in the power to tailor your sniping strategies according to your preferences, and ascend to the pinnacle of username sniping excellence, where no opportunity escapes your grasp. Brace yourself for an experience that defies expectations, as the ultimate Discord Name Sniper unlocks a realm of infinite possibilities.</p>
+                    </div>
+                </section>
+
+                <!--===== STATISTICS =====-->
+                <section class="statistics section" id="statistics">
+                    <h2 class="section-title">Statistics</h2>
+
+                    <div class="statistics_container bd-grid">          
+                        <div>
+                            <h2 class="statistics_subtitle">Overall Statistics</h2>
+                            <p class="statistics_text">These statistics are taken from the Github API.</p>
+                            <div class="statistics_data">
+                                <div class="statistics_names">
+                                    <box-icon type='logo' name='user'></box-icon>
+                                    <i class='bx bx-star statistics_icon'></i>
+                                    <span class="statistics_name">Stars</span>
+                                </div>
+                                <div class="statistics_bar statistics_user"></div>
+                                <div>
+                                <span class="statistics_num">0</span>
+                                </div>
+                            </div>
+                            <div class="statistics_data">
+                                <div class="statistics_names">
+                                <i class='bx bx-git-repo-forked statistics_icon'></i>
+                                    <span class="statistics_name">Forks</span>
+                                </div>
+                                <div class="statistics_bar statistics_commands"></div>
+                                <div>
+                                <span class="statistics_num">0</span>
+                                </div>
+                            </div>
+                            <div class="statistics_data">
+                                <div class="statistics_names">
+                                    <i class='bx bx-group statistics_icon'></i>
+                                    <span class="statistics_name">Contributors</span>
+                                </div>
+                                <div class="statistics_bar statistics_commands"></div>
+                                <div>
+                                <span class="statistics_num">0</span>
+                                </div>
+                            </div>
+                            <div class="statistics_data">
+                                <div class="statistics_names">
+                                    <i class='bx bx-info-circle statistics_icon'></i>
+                                    <span class="statistics_name">Issues</span>
+                                </div>
+                                <div class="statistics_bar statistics_commands"></div>
+                                <div>
+                                <span class="statistics_num">0</span>
+                                </div>
+                            </div>
+                            <div class="statistics_data">
+                                <div class="statistics_names">
+                                    <i class='bx bx-git-pull-request statistics_icon'></i>
+                                    <span class="statistics_name">Pull Requests</span>
+                                </div>
+                                <div class="statistics_bar statistics_commands"></div>
+                                <div>
+                                <span class="statistics_num">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>              
+                            <img src="assets/img/statistics.png" alt="" class="statistics_img">
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <!--===== FOOTER =====-->
+            <footer class="footer">
+                <p class="footer_title">Sxvxge</p>
+                <div class="footer_social">
+                <a target="_blank" href="https://twitter.com/Sxvxgeness" class="footer_icon"><i class='bx bxl-twitter' ></i></a>
+                <a target="_blank" href="https://stackoverflow.com/users/20310104/sxvxgeness" class="footer_icon"><i class='bx bxl-stack-overflow'></i>
+                <a target="_blank" href="https://github.com/Sxvxgee/" class="footer_icon"><i class='bx bxl-github' ></i></a>
+                </div>
+                <p class="footer_copy"><i class='bx bx-copyright'></i> Sxvxge. All rights reserved.</p>
+            </footer>
+
+
+            <!--===== SCROLL REVEAL =====-->
+            <script src="https://unpkg.com/scrollreveal"></script>
+
+            <!--===== MAIN JS =====-->
+            <script src="assets/js/main.js"></script>
+        </body>
+    </html>
